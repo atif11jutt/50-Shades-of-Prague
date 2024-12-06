@@ -1,0 +1,118 @@
+/*
+Theme Name: AIO Custom Build
+Theme URI: 
+Description: Interactive HTML5, One page site
+Version: 2
+Author: Anthony Daniel II
+Author URI: http://handsomegneius.me/
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/*
+HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
+*/
+
+/* WordPress Required Styles */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+.sticky {
+	background: #f7f7f7;
+	padding: 0 10px 10px;
+}
+	
+.sticky h2 {
+	padding-top: 10px;
+}
+
+
+.outer {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapf {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background: #5181B8;
+  border-radius: 50%;
+}
+
+.wrapf .play,
+.wrapf .pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play {
+  background: teal;
+  border-radius: 50%;
+}
+
+.play path {
+  fill: #fff;
+}
+
+.pause {
+  background: green;
+  border-radius: 50%;
+}
+
+.pause path {
+  fill: #fff;
+  background: blue;
+}
+
+.hide {
+  display: none;
+}
