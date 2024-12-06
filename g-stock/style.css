@@ -1,18 +1,4 @@
-/*
-Theme Name: AIO Custom Build
-Theme URI: 
-Description: Interactive HTML5, One page site
-Version: 2
-Author: Anthony Daniel II
-Author URI: http://handsomegneius.me/
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-*/
-
-/*
-HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
-*/
 
 /* WordPress Required Styles */
 .aligncenter {
@@ -116,3 +102,259 @@ HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
 .hide {
   display: none;
 }
+
+
+#addy a{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+section#contact #contact-form form input[type="submit"]{
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+section#contact #contact-form form input[type="submit"]:hover{
+  background: #dd4e62;
+}
+
+footer{
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+section#services ul#panel-wrap li .pane .text-layer h3{
+  border: 0 !important;
+}
+
+section#about, section#home #recent-wrap{
+  z-index: 1;
+}
+section#about .container{
+  width: 50%;
+}
+
+
+section#services ul#panel-wrap li.opened {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  z-index: 1000000000;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.about-image{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  section#about .container{
+    width: 100%;
+  }
+  .about-image{
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Audio Player Container */
+.audio-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.play-btn {
+  font-size: 24px;
+}
+
+.volume-btn {
+  font-size: 18px;
+}
+
+/* Volume Slider */
+.volume-slider {
+  appearance: none;
+  width: 100px;
+  background: #555;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .audio-player {
+    position: unset;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .volume-slider {
+    display: block;
+    width: 100%;
+  }
+
+  section#contact #contact-form form input[type="submit"]{
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+}
+
+header nav#primary ul{
+  float: unset;
+}
+
+/* Google Translate Container inside Navigation */
+#google_translate_element {
+  float: right;
+  display: inline-block; /* Make it inline within the navigation */
+  background-color: #dd4e62;  /* Red background */
+  border-radius: 5px;
+  padding: 8px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: 20px;  /* Space between other navigation items */
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+}
+
+header {
+  /* z-index: 100000000; */
+}
+
+/* .goog-te-banner-frame {
+  display: none !important;
+} */
+
+html, body {
+  overflow-y: unset;
+}
+header .logo {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img{
+  position: unset;
+  top: unset;
+}
+
+body > div.skiptranslate:first-child{
+  display: none !important;
+}
+
+header #retract{
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Hover Effect for Google Translate Button */
+#google_translate_element:hover {
+  background-color: #c53e52;  /* Darker red on hover */
+}
+
+.goog-te-gadget-simple{
+  background: transparent !important;
+  border: none !important;
+}
+
+.goog-te-gadget-simple a, 
+.goog-te-gadget-simple a span{
+  color: #fff !important;
+}
+
+/* Styling for Google Translate Dropdown */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button Style for Google Translate */
+.goog-te-combo {
+  background-color: #333;  /* Dark background for the dropdown */
+  color: #fff;             /* White text */
+  border: 1px solid #dd4e62; /* Red border */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.goog-te-combo:focus {
+  border-color: #dd4e62;  /* Red border on focus */
+}
+
+/* Styling for the translate button text */
+#google_translate_element .goog-te-menu-value {
+  color: #fff;  /* White text for the language label */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Optional: Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  #google_translate_element {
+    padding: 6px 12px;
+    display: none;
+  }
+
+  .goog-te-combo {
+    font-size: 12px;
+  }
+}
+
+
