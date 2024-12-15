@@ -23,6 +23,7 @@ class="no-js lt-ie9"> <![endif]-->
 	<meta name="designer" content="50 Shades Of Prague">
 	<meta name="robots" content="all">
 	<meta name="author" content="50 SHADES OF PRAGUE">
+	<meta name="robots" content="index, follow">
 	<link rel="icon" type="image/gif" href="g-stock/animated_favicon1.gif">
 	<link rel="apple-touch-icon" href="g-stock/apple-touch-icon.png">
 
@@ -36,26 +37,35 @@ class="no-js lt-ie9"> <![endif]-->
 		}
 	</script>
 	<!-- Preconnect and Prefetch -->
-	
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<!-- JavaScript for Google Translate -->
-	<script async  type="text/javascript"
-		src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"
-		type="text/css">
+	<link rel="preload" href="https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2" as="font"
+		type="font/woff2" crossorigin="anonymous">
+	<style>
+		@font-face {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url('https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2') format('woff2');
+		}
+	</style>
 
 	<!-- Fancybox CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+		media="print" onload="this.media='all';">
 
 	<link rel="stylesheet" href="g-stock/main.css">
 	<link rel="stylesheet" href="g-stock/style.css">
-	<!-- <script src="g-stock/modernizr.custom.10751.js"></script> -->
-	<!-- <script type="text/javascript" src="g-stock/jquery.js"></script> -->
+
+
+	<!-- JavaScript for Google Translate -->
+	<script async type="text/javascript"
+		src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 
@@ -280,7 +290,8 @@ class="no-js lt-ie9"> <![endif]-->
 									experience in retro cars or cruise the Vltava River in a private boat. Whichever way
 									you choose, you’ll see Prague’s stunning history and beauty from a whole new
 									perspective!</p>
-								<figure id="fashion-tools"> <img src="g-stock/fashion-tools-min.png" alt="graphic element">
+								<figure id="fashion-tools"> <img src="g-stock/fashion-tools-min.png"
+										alt="graphic element">
 								</figure>
 							</article>
 						</div>
@@ -422,7 +433,8 @@ class="no-js lt-ie9"> <![endif]-->
 
 
 					<div>
-						<p> <strong>WHATSAPP:</strong> <br> <a href="https://wa.me/420727840345" target="_blank" rel="noopener noreferrer">
+						<p> <strong>WHATSAPP:</strong> <br> <a href="https://wa.me/420727840345" target="_blank"
+								rel="noopener noreferrer">
 								<p><img src="g-stock/icon-wp.jpg" alt="WHATSAPP icon"></p>
 								<span class="phone">+420727840345</span>
 							</a>
@@ -432,7 +444,8 @@ class="no-js lt-ie9"> <![endif]-->
 
 
 					<div>
-						<p> <strong>Email:</strong> <br> <a href="mailto:50shadesofprague@gmail.com" rel="noopener noreferrer">
+						<p> <strong>Email:</strong> <br> <a href="mailto:50shadesofprague@gmail.com"
+								rel="noopener noreferrer">
 								<p><img src="g-stock/gmail-logo.png" alt="gmail icon"></p>
 								<span class="email">50shadesofprague@gmail.com</span>
 							</a>
