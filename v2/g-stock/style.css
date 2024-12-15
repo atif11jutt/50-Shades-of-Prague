@@ -1,0 +1,524 @@
+
+
+/* WordPress Required Styles */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+.sticky {
+	background: #f7f7f7;
+	padding: 0 10px 10px;
+}
+	
+.sticky h2 {
+	padding-top: 10px;
+}
+
+
+.outer {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapf {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background: #5181B8;
+  border-radius: 50%;
+}
+
+.wrapf .play,
+.wrapf .pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play {
+  background: teal;
+  border-radius: 50%;
+}
+
+.play path {
+  fill: #fff;
+}
+
+.pause {
+  background: green;
+  border-radius: 50%;
+}
+
+.pause path {
+  fill: #fff;
+  background: blue;
+}
+
+.hide {
+  display: none;
+}
+
+
+#addy a{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+section#contact #contact-form form input[type="submit"]{
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+section#contact #contact-form form input[type="submit"]:hover{
+  background: #dd4e62;
+}
+
+footer{
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+section#services ul#panel-wrap li .pane .text-layer h3{
+  border: 0 !important;
+}
+
+section#about, section#home #recent-wrap{
+  z-index: 1;
+}
+section#about .container{
+  width: 50%;
+}
+
+
+section#services ul#panel-wrap li.opened {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  z-index: 1000000000;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.about-image{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  section#about .container{
+    width: 100%;
+  }
+  .about-image{
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Audio Player Container */
+.audio-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.play-btn {
+  font-size: 24px;
+}
+
+.volume-btn {
+  font-size: 18px;
+}
+
+/* Volume Slider */
+.volume-slider {
+  appearance: none;
+  width: 100px;
+  background: #555;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .audio-player {
+    position: unset;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .volume-slider {
+    display: block;
+    width: 100%;
+  }
+
+  section#contact #contact-form form input[type="submit"]{
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+  }
+}
+
+header nav#primary ul{
+  float: unset;
+}
+
+/* Google Translate Container inside Navigation */
+#google_translate_element {
+  float: right;
+  display: inline-block; /* Make it inline within the navigation */
+  background-color: #dd4e62;  /* Red background */
+  border-radius: 5px;
+  padding: 8px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: 20px;  /* Space between other navigation items */
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+}
+
+header {
+  /* z-index: 100000000; */
+}
+
+/* .goog-te-banner-frame {
+  display: none !important;
+} */
+
+html, body {
+  overflow-y: unset;
+}
+header .logo {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img{
+  position: unset;
+  top: unset;
+}
+
+body > div.skiptranslate:first-child{
+  display: none !important;
+}
+
+header #retract{
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Hover Effect for Google Translate Button */
+#google_translate_element:hover {
+  background-color: #c53e52;  /* Darker red on hover */
+}
+
+.goog-te-gadget-simple{
+  background: transparent !important;
+  border: none !important;
+}
+
+.goog-te-gadget-simple a, 
+.goog-te-gadget-simple a span{
+  color: #fff !important;
+}
+
+/* Styling for Google Translate Dropdown */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button Style for Google Translate */
+.goog-te-combo {
+  background-color: #333;  /* Dark background for the dropdown */
+  color: #fff;             /* White text */
+  border: 1px solid #dd4e62; /* Red border */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.goog-te-combo:focus {
+  border-color: #dd4e62;  /* Red border on focus */
+}
+
+/* Styling for the translate button text */
+#google_translate_element .goog-te-menu-value {
+  color: #fff;  /* White text for the language label */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Optional: Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  #google_translate_element {
+    padding: 6px 12px;
+    float: unset;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    left: 50%;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .goog-te-combo {
+    font-size: 12px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  header .logo img {
+    width: 94%;
+    top: 0; 
+  }   
+}
+
+
+section#contact article#addy{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+section#contact article#addy > div{
+  width: 33.33%;
+  max-width: 220px;
+}
+
+section#contact article#addy img{
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  section#contact article#addy .email{
+    font-size: 2.15vw;
+  }
+
+  section#contact article#addy .insta{
+    font-size: 2.9vw;
+  }
+
+  section#contact article#addy .phone{
+    font-size: 2.9vw;
+  }
+
+}
+
+section#contact{
+  min-height: unset !important;
+}
+section#contact .container{
+  padding-top: 0 !important;
+}
+
+@media screen and (max-width: 480px) {
+  section#contact article#addy .email{
+    font-size: 2vw;
+  }
+
+  section#contact article#addy .insta{
+    font-size: 2.9vw;
+  }
+
+  section#contact article#addy .phone{
+    font-size: 2.9vw;
+  }
+
+}
+
+
+
+
+.tips-wrapper {
+            
+  line-height: 1.8;
+  margin: 0;
+  /* padding: 0 0 20px 0; */
+  /* background: linear-gradient(135deg, #d08add, #ffe1f0); */
+  background: #ffffff;
+  color: #000000;
+}
+
+.tips-section {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px 30px 30px 30px;
+  /* background: rgba(255, 255, 255, 0.35); */
+  /* backdrop-filter: blur(10px); */
+  border-radius: 15px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  box-sizing: border-box;
+}
+
+.tips-heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #9f00ff;
+  text-shadow:  0 0 20px #9f00ff, 0 0 30px #9f00ff55;
+}
+
+.tips-content {
+  margin-top: 20px;
+}
+
+.tips-content h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow: 0 0 20px currentColor;
+}
+
+.heading-pickpocketing {
+  /* color: #ff6347;  */
+  color: #ff41ba;
+}
+
+.heading-currency-exchange {
+  /* color: #9f00ff;  */
+  color: #ff41ba;
+}
+
+.heading-taxis {
+  /* color: #36eb3d;  */
+  color: #ff41ba;
+}
+
+.heading-public-transport {
+  /* color: #1ec9ff;  */
+  color: #ff41ba;
+}
+
+.heading-currency {
+  color: #ff41ba;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff4500ba;
+}
+
+.tips-content p {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.tips-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tips-section ul li {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.tips-section ul li p {
+  font-weight: normal;
+  color: #555555;
+  margin: 5px 0 0 15px;
+}
