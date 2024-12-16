@@ -70,7 +70,24 @@
 				<!-- <button id="open" class="ir">Open</button> -->
 				<nav id='primary'>
 
-					
+					<div class="audio-player" id="audioPlayer">
+						<!-- Play/Pause Button -->
+						<button id="playPauseBtn" class="play-btn">▶</button>
+
+						<!-- Volume Button -->
+						<button id="volumeBtn" class="volume-btn">🔊</button>
+
+						<!-- Volume Slider -->
+						<label for="volumeSlider" style="position: absolute;z-index: -1; opacity: 0;"></label>
+						<input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="1"
+							class="volume-slider">
+					</div>
+
+					<!-- Audio File -->
+					<audio id="backgroundAudio" loop>
+						
+						Your browser does not support the audio element.
+					</audio>
 
 
 					<ul id="menu-main" class="menu">
@@ -169,7 +186,7 @@
 					<figure id="family" style="opacity: 1;"> <img src="assets/logo22-min.png" alt="family photo" loading="lazy">
 					</figure>
 				</article>
-				<img src="g-stock/about-bg2.jpg" alt="about" class="about-image" loading="lazy">
+				<img src="g-stock/about-bg3.jpg" alt="about" class="about-image" loading="lazy">
 			</div>
 		</section>
 		<section id="services" class="section-active">
@@ -190,7 +207,7 @@
 									to unwind with a cocktail, enjoy breathtaking
 									private or stage shows, or dance until dawn, we promise a night of excitement,
 									luxury, and pure adrenaline. For sure, if you know where to go and when to go…</p>
-								<figure id="comb"><img src="g-stock/comb-graphic-min.png" alt="hair comb"></figure>
+								<figure id="comb"><img src="g-stock/comb-graphic-min.webp" alt="hair comb"></figure>
 							</article>
 						</div>
 					</div>
@@ -214,7 +231,7 @@
 									guests, and a welcoming atmosphere, your desires are free to roam. Whether you're a
 									seasoned explorer or a curious newcomer, the night promises endless possibilities.
 									Are you ready to discover the freedom to play?</p>
-								<figure id="brush1"> <img src="g-stock/makeup-brushes1-min.png" alt="Makeup Brushes">
+								<figure id="brush1"> <img src="g-stock/makeup-brushes1-min.webp" alt="Makeup Brushes">
 								</figure>
 							</article>
 						</div>
@@ -244,7 +261,7 @@
 									tracks, and a limo or party shuttle giving you and your friends sexy rides. Make
 									your next celebration one for the books—because you deserve nothing less than
 									spectacular.</p>
-								<figure id="polish"> <img src="g-stock/nail-polish-min.png" alt="Nail Polish"> </figure>
+								<figure id="polish"> <img src="g-stock/nail-polish-min.webp" alt="Nail Polish"> </figure>
 							</article>
 						</div>
 					</div>
@@ -269,7 +286,7 @@
 									experience in retro cars or cruise the Vltava River in a private boat. Whichever way
 									you choose, you’ll see Prague’s stunning history and beauty from a whole new
 									perspective!</p>
-								<figure id="fashion-tools"> <img src="g-stock/fashion-tools-min.png"
+								<figure id="fashion-tools"> <img src="g-stock/fashion-tools-min.webp"
 										alt="graphic element">
 								</figure>
 							</article>

@@ -11,6 +11,15 @@
   const volumeBtn = document.getElementById("volumeBtn");
   const volumeSlider = document.getElementById("volumeSlider");
   let hasInteracted = !1;
+
+   // Dynamically create the source element
+   const source = document.createElement("source");
+   source.src = "mp3/music2.wav";  // Your audio file path
+   source.type = "audio/mpeg";     // Audio type (adjust if using different format)
+ 
+   // Append the source to the audio element
+   audio.appendChild(source);
+   
   function updatePlayPauseBtn() {
     if (audio.paused) {
       playPauseBtn.textContent = "▶";
